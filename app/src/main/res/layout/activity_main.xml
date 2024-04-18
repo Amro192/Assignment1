@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".LogINActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="164dp"
+        android:layout_height="169dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="90dp"
+        app:srcCompat="@drawable/logo" />
+
+    <EditText
+        android:id="@+id/edtName"
+        android:layout_marginTop="25dp"
+        android:layout_width="300dp"
+        android:layout_height="55dp"
+        android:layout_gravity="center"
+        android:hint="@string/email_or_username"
+        android:inputType="textEmailAddress"
+        tools:ignore="LabelFor"
+        android:autofillHints="username" />
+
+
+
+    <EditText
+        android:id="@+id/edtPasswd"
+        android:layout_marginTop="15dp"
+        android:layout_width="300dp"
+        android:layout_height="55dp"
+        android:layout_gravity="center"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        tools:ignore="LabelFor"
+        android:autofillHints="password" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_marginTop="15dp"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:text="@string/remember_me" />
+
+    <Button
+        android:id="@+id/btnSubmit"
+        style="@style/Widget.AppCompat.Button.Small"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:onClick="btnSLogInOnClick"
+        android:text="@string/log_in"
+        android:textColorLink="#006A2F2F" />
+
+
+</LinearLayout>
